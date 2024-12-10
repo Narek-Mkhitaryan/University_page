@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+
+<html class="no-js">
+	<head>
+		<meta charset="utf-8">
+		<title>UFAR</title>
+
+  		<!-- Facebook and Twitter integration -->
+		<meta property="og:title" content=""/>
+		<meta property="og:image" content=""/>
+		<meta property="og:url" content=""/>
+		<meta property="og:site_name" content=""/>
+		<meta property="og:description" content=""/>
+		<meta name="twitter:title" content="" />
+		<meta name="twitter:image" content="" />
+		<meta name="twitter:url" content="" />
+		<meta name="twitter:card" content="" />
+
+		<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+		<link rel="shortcut icon" href="favicon.ico">
+
+		<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/animate.css') }}">
+		<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/icomoon.css') }}">
+		<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+		<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/superfish.css') }}">
+		<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/magnific-popup.css') }}">
+		<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+		<!-- Modernizr JS -->
+		<script type="text/javascript" src="{{ url_for('static', filename='js/modernizr-2.6.2.min.js') }}"></script>
+	    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+	</head>
+	<body>
+		<div id="fh5co-wrapper">
+		<div id="fh5co-page">
+
+		<div class="fh5co-hero">
+			<div class="fh5co-overlay"></div>
+
+			<div class="fh5co-cover text-center" data-stellar-background-ratio="0.5" style="background-image: url(/static/images/French_University_in_Armenia.jpg);">
+				<div class="desc">
+
+					<div class="container">
+						<div class="col-md-10 col-md-offset-1">
+							<a href="{{ url_for('index') }}" id="main-logo">
+								<img src="{{ url_for('static', filename='images/ufar-logo.png') }}" alt="UFAR Logo">
+							</a>
+							<div class="animate-box"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<header id="fh5co-header-section" class="sticky-banner">
+			<div class="container">
+				<div class="nav-header">
+					<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle dark"><i></i></a>
+					<!-- Заменяем текст на изображение -->
+					<h1 id="fh5co-logo">
+						<a href="{{ url_for('index') }}">
+							<img src="{{ url_for('static', filename='images/ufar-logo.png') }}" alt="UFAR Logo">
+						</a>
+					</h1>
+					<!-- START #fh5co-menu-wrap -->
+					<nav id="fh5co-menu-wrap" role="navigation">
+						<ul class="sf-menu" id="fh5co-primary-menu">
+							<li class="#"><a href="#section1">Rectors</a></li>
+							<li><a href="#section2">Faculties</a></li>
+							<li><a href="#section3">Admission</a></li>
+							<li><a href="#section4">Contact</a></li>
+						</ul>
+					</nav>
+
+				</div>
+			</div>
+		</header>
+
+		<div id="section1" class="section">
+			<div class="fh5co-content-section">
+				<div class="container">
+					<div class="row row-bottom-padded-md">
+						<div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
+							<h3>Rector Of Our University</h3>
+							<p>Our university is proud of its strategic collaboration with leading global universities, fostering the exchange of knowledge, research, and innovation on a global scale.</p>
+						</div>
+					</div>
+				</div>
+				<div id="centered-container" class="container">
+					<div class="col-md-4">
+						<div class="fh5co-team text-center animate-box">
+							<figure>
+								<img src="{{ url_for('static', filename='images/1662733608.jpg') }}" alt="user">
+							</figure>
+							<p>Salwa Nacouzi</p>
+							<blockquote>
+								<p>Forte de 22 ans d’expérience, l’Université française en Arménie a bâti un projet éducatif ambitieux en partenariat avec des universités françaises de renom : l’Université Jean Moulin Lyon 3 et l’Université Toulouse 3 Paul Sabatier...</p>
+							</blockquote>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="section2" class="section">
+			<div id="fh5co-blog-section" class="fh5co-section-gray">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
+							<h3>Faculties</h3>
+							<p>Our university is home to five distinct faculties, each offering a wide range of academic programs and fostering excellence in research and education.</p>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<!-- Faculty Blocks -->
+					<div class="expandable">
+						<div class="header" onclick="toggleSection('section1')">
+							<p>Jurisprudence</p>
+						</div>
+						<div class="content" id="Subsection1">
+							<div class="detailed-content">
+								<div class="photo-container">
+									<img src="{{ url_for('static', filename='images/1645005811.jpg') }}" alt="sub photo 1">
+									<p>Dean: Garine Hovsepian</p>
+									<p>Le Master « Droit international, droit privé international et comparé» à l’UFAR vous donne une formation avancée...</p>
+								</div>
+								<div class="photo-container">
+									<img src="{{ url_for('static', filename='images/1666873022.png') }}" alt="sub photo 2">
+									<p>Associate Dean: Chrystelle Gazeau</p>
+									  <p style="color: black;">L’UFAR a formé parmi les meilleurs juristes arméniens qui exercent aujourd’hui dans leur pays ou ailleurs à l’international. Faire le Master à l’UFAR permet de suivre des cours, dans tout ce qu’ils revêtent de connaissances techniques et théoriques, délivrés par des enseignants arméniens et français aux fins d’obtenir un double diplôme reconnu par l’État. Dans ce cadre, les étudiants gagnent une faculté d’approfondissement des notions fondamentales et se préparent dans les meilleures conditions à leur future profession.</p>
+							</div>
+						  </div>
+						  <p class="common-text">Provide solid and general legal knowledge in Armenian law, both in public law, private law and international law; and in French law, from the third year of the degree.
+
+							Encourage the assimilation of a research methodology and legal writing, and the exercise of oral pleading, through lessons focused on practice.
+
+							Allow the acquisition of complementary knowledge essential to the exercise of the profession, by strengthening the linguistic and computer skills of students.</p>
+						</div>
+					</div>
+					  					<!-- Блок 2 -->
+					<div class="expandable">
+						<div class="header" onclick="toggleSection('section2')">
+						  <p>Management</p>
+						</div>
+						<div class="content" id="Subsection2">
+						  <div class="detailed-content">
+							<div class="photo-container">
+							  <img src="{{ url_for('static', filename='images/1645005864.jpg') }}"  />
+							  <p>Dean: Hrant Harutyunyan</p>
+							  <p style="color: rgb(0, 0, 0);">The Faculty of Management aims to welcome you in order to make you competent professionals, citizens, actors of civil society. Its vocation is to be the privileged place of training of people capable of developing an authentic ethical thought. This objective presupposes the existence of a true university body which guarantees academic values ​​among which intellectual freedom and institutional autonomy.</p>
+							</div>
+							<div class="photo-container">
+							  <img src="{{ url_for('static', filename='images/1645005941.jpg') }}" />
+							  <p>Associate Dean: Jean-Baptiste Cartier</p>
+							  <p style="color: rgb(0, 0, 0);">UFAR is known for having one of the best management educations in Armenia. UFAR Faculty of Management prepares its students with a wealth of knowledge and skills to be able to assume positions of responsibility at the local, regional and international levels, both in the private and public sectors. They can also become socially responsible entrepreneurs.</p>
+							</div>
+						  </div>
+						  <p class="common-text">To provide in-depth theoretical knowledge in management and economics.
+
+							To prepare quality theoretical and practical specialists: economists, managers, financial managers.
+
+							To give students an initial knowledge of professional practices in Armenian and French banks, insurance companies and other financial organizations.
+
+							To encourage the pursuit of studies in graduate studies and to support the conduct of academic and practical research.</p>
+						</div>
+					</div>
+
+					<!-- Блок 3 -->
+					<div class="expandable">
+						<div class="header" onclick="toggleSection('section3')">
+						  <p>Marketing</p>
+						</div>
+						<div class="content" id="Subsection3">
+						  <div class="detailed-content">
+							<div class="photo-container">
+							  <img src="{{ url_for('static', filename='images/1645005958.jpg') }}"  />
+							  <p>Dean: Naira Hayrapetyan</p>
+							  <p style="color: black;">Today we are faced with the ambitious task of training "competitive professionals", leaders who will be able to make competent decisions in difficult situations. If you want to get high-quality and contemporary education in the fields of marketing, sales, advertising, public relations or digital marketing, choose the Faculty of Marketing at UFAR.</p>
+							</div>
+							<div class="photo-container">
+							  <img src="{{ url_for('static', filename='images/1645005941.jpg') }}"  />
+							  <p>Associate Dean: Jean-Baptiste Cartier</p>
+							  <p style="color: rgb(0, 0, 0);">The Faculty of Marketing at UFAR provides its students with fundamental knowledge in the field of marketing: market research, marketing strategies, communication on social networks, commercial negotiation, etc. Graduates become not only marketers but also actors with the ability to take initiatives and organize projects. Creative people are welcome in this faculty.</p>
+							</div>
+						  </div>
+						  <p class="common-text">Acquire solid and in-depth skills in marketing, sales, management and decision-making, which correspond to national and international professional criteria.
+
+							Combine theoretical and practical knowledge during teaching.
+
+							Contribute to quality professionalization, by involving representatives of leading companies during the training..</p>
+						</div>
+					</div>
+
+					<div class="expandable">
+						<div class="header" onclick="toggleSection('section3')">
+						  <p>Finance</p>
+						</div>
+						<div class="content" id="Subsection2">
+							<div class="detailed-content">
+							  <div class="photo-container">
+								<img src="{{ url_for('static', filename='images/1645005864.jpg') }}"  />
+								<p>Dean: Hrant Harutyunyan</p>
+								<p style="color: rgb(0, 0, 0);">The Faculty of Finance aims to welcome you in order to make you competent professionals, citizens, actors of civil society. Its vocation is to be the privileged place of training of people capable of developing an authentic ethical thought. This objective presupposes the existence of a true university body that guarantees academic values ​​including intellectual freedom and institutional autonomy.</p>
+							  </div>
+							  <div class="photo-container">
+								<img src="{{ url_for('static', filename='images/1645005941.jpg') }}" />
+								<p>Associate Dean: Jean-Baptiste Cartier</p>
+								<p style="color: rgb(0, 0, 0);">The Faculty of Finance at UFAR was opened in 2014, it is younger than the first three faculties of this institution: law, management, marketing. Pursuing a degree in finance at UFAR means having Armenian and international banks and financial institutions as employers at the end of your studies, because you will be armed with solid and fundamental knowledge thanks to professional teachers in their fields.</p>
+							  </div>
+							</div>
+							<p class="common-text">-Provide in-depth theoretical knowledge in finance and economics.
+
+								-Prepare quality theoretical and practical specialists: economists, financial managers, banking and insurance professionals.
+
+								-Give students an initial knowledge of professional practices in Armenian and French banks, insurance companies and other financial organizations.
+
+								-Encourage the pursuit of studies in graduate studies and support the conduct of academic and practical research.</p>
+						  </div>
+					</div>
+					<div class="expandable">
+						<div class="header" onclick="toggleSection('section3')">
+						  <p>Computer science</p>
+						</div>
+						<div class="content" id="Subsection5">
+						  <div class="detailed-content">
+							<div class="photo-container">
+							  <img src="{{ url_for('static', filename='images/1645005895.jpg') }}" alt="Доп. фото 1" />
+							  <p>Dean: Kristina Sargsyan</p>
+							  <p style="color: black;">Computer science is a very broad field that originates from the intersection of several fundamental and applied professional fields. The main mission of our faculty is to accompany and guide students with unlimited minds and imagination, to become competitive in the most popular professional field nowadays at the transnational level, to build their own professional trajectory in Armenia.</p>
+							</div>
+							<div class="photo-container">
+							  <img src="{{ url_for('static', filename='images/1645005925.jpg') }}" alt="Доп. фото 2" />
+							  <p>Associate Dean: Alain Crouzil</p>
+
+
+							  <p style="color: rgb(0, 0, 0);">Congratulations on your interest in the IT training at UFAR. With a strong project management component, the IT curriculum at UFAR prepares future engineers and specialists in the field of IT. By choosing to study at UFAR, you will be enrolled at the University Toulouse 3 Paul Sabatier and will thus have the opportunity to access training that combines the best of Armenian and French experiences in IT.</p>
+							</div>
+						  </div>
+						  <p class="common-text">-Provide in-depth theoretical knowledge on programming, systems, networks, databases, machine architecture, etc.
+
+							-Promote understanding of the foundations on which current and future tools and methods are built, through practical teachings occupying a third of the training.
+
+							-Prepare for entry into working life by providing orientation and professionalization elements.</p>
+						</div>
+					</div>
+
+				</div>
+
+
+			</div>
+		</div>
+
+		<div id="section3" class="section">
+			<div class="fh5co-content-section">
+			  <div class="container">
+				<div class="row">
+				  <div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
+					<h3>Admission</h3>
+				  </div>
+				</div>
+				<div class="col-md-12 text-center animate-box">
+				  <div id="player"></div>
+				</div>
+			  </div>
+			</div>
+		</div>
+
+		<script src="https://www.youtube.com/iframe_api"></script>
+
+		<footer>
+			<div id="section4" class="section">
+				<div id="footer">
+					<div class="container">
+						<div class="row animate-box">
+							<div class="col-md-6">
+								<h3 class="section-title">Our Address</h3>
+								<ul class="contact-info">
+									<li><i class="icon-location-pin"></i>1st Building, 10 Davit Anhaght Street, Yerevan 0037</li>
+									<li><i class="icon-phone2"></i>+ 374 (010) 249647</li>
+									<li><i class="icon-mail"></i><a href="#">info@ufar.am</a></li>
+									<li><i class="icon-globe2"></i><a href="#">www.ufar.am/</a></li>
+								</ul>
+							</div>
+						</div>
+						<div id="map" class="fh5co-map">
+							<iframe
+								src="https://www.google.com/maps?q=40.2028351,44.5292588&z=17&output=embed"
+								width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen>
+							</iframe>
+						</div>
+						<div class="row">
+							<div class="col-md-6 col-md-offset-3 text-center">
+								<p class="fh5co-social-icons">
+									<a href="https://x.com/ufarofficial?mx=2"><i class="icon-twitter2"></i></a>
+									<a href="https://www.facebook.com/ufarofficial/"><i class="icon-facebook2"></i></a>
+									<a href="https://www.instagram.com/ufarofficial/"><i class="icon-instagram"></i></a>
+									<a href="https://login.microsoftonline.com/"><i class="icon-mail"></i></a>
+									<a href="https://www.youtube.com/channel/UCGoyGhMzlVcYQ-GpaQYJx4w?app=desktop"><i class="icon-youtube"></i></a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		</div>
+	</body>
+		<script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+		<!-- jQuery Easing -->
+		<script src="{{ url_for('static', filename='js/jquery.easing.1.3.js') }}"></script>
+		<!-- Bootstrap -->
+		<script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+		<!-- Waypoints -->
+		<script src="{{ url_for('static', filename='js/jquery.waypoints.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/sticky.js') }}"></script>
+
+		<!-- Stellar -->
+		<script src="{{ url_for('static', filename='js/jquery.stellar.min.js') }}"></script>
+		<!-- Superfish -->
+		<script src="{{ url_for('static', filename='js/hoverIntent.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/superfish.js') }}"></script>
+		<!-- Magnific Popup -->
+		<script src="{{ url_for('static', filename='js/jquery.magnific-popup.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/magnific-popup-options.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/google_map.js') }}"></script>
+		<!-- Main JS -->
+		<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</html>
